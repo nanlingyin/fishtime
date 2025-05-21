@@ -1,4 +1,4 @@
-# Fish Time Tracker
+# Fish Time
 
 <div align="center">
   <img src="icon/text.png" alt="Fish Time Logo" width="120">
@@ -39,7 +39,7 @@ Fish Time Tracker is a desktop application designed to automatically record the 
 ### 2. Get the Code
 
 ```bash
-git clone https://github.com/yourusername/fishtime.git
+git clone https://github.com/nanlingyin/fishtime.git
 cd fishtime
 ```
 

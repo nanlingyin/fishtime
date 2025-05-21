@@ -1,76 +1,83 @@
+# Fish Time Tracker
 
-# Fish Time
+<div align="center">
+  <img src="icon/text.png" alt="Fish Time Logo" width="120">
+  <br>
+  <p>Track your time, boost your productivity</p>
+</div>
 
-## Description
+## 📝 Project Overview
 
-Fish Time Tracker is a desktop application designed to record the daily usage time of different applications and websites. By automatically tracking and generating visual reports, it helps users understand their time distribution and improve productivity.
+Fish Time Tracker is a desktop application designed to automatically record the time spent on different applications. Through detailed statistics and intuitive visualization reports, it helps users understand their time allocation, thereby improving work efficiency and time management skills.
 
-## Features
+## ✨ Key Features
 
-- **Automatic Time Tracking**: Real-time tracking of active application usage.
-- **Process Whitelist Management**: Add or remove processes that do not need to be monitored.
-- **Generate Visual Reports**: Create usage distribution charts for the day.
-- **Data Export**: Export data to CSV, XLSX, and PDF formats.
-- **Multi-language Support**: Interface available in both Chinese and English.
-- **Theme Selection**: Choose between dark, white, and gray themes.
-- **Font Settings**: Customize font styles and colors.
-- **System Tray Minimization**: Minimize the application to the system tray for a clutter-free desktop.
+- **Real-time Monitoring**: Automatically detects and records the currently active application with precise timing
+- **Process Whitelist Management**: Add applications that don't need monitoring to a whitelist for flexible control
+- **Comprehensive Reports**: Generate detailed usage reports including application names, icons, and usage duration
+- **Data Export Options**: Export usage data in XLSX, CSV, and PDF formats for archiving and analysis
+- **Multi-language Interface**: Support for both Chinese and English interfaces to meet different user needs
+- **Theme Customization**: Choose between dark, white, and gray themes for a personalized visual experience
+- **Font Settings**: Customize interface fonts and colors for a comfortable user experience
+- **System Tray Operation**: Can be minimized to the system tray to continue recording without occupying desktop space
 
-## Tech Stack
+## 🔧 Technology Stack
 
 - **Programming Language**: Python
 - **GUI Framework**: PyQt5
-- **Database**: SQLite
+- **Data Storage**: SQLite
 - **Data Visualization**: Matplotlib
-- **Other Libraries**: psutil, openpyxl, fpdf, pywin32
+- **Supporting Libraries**: psutil, openpyxl, fpdf, pywin32
 
-## Installation
+## 📦 Installation and Setup
 
-1. **Clone the Repository**
+### 1. System Requirements
 
-    ```bash
-    git clone https://github.com/yourusername/fish_time_tracker.git
-    cd fish_time_tracker
-    ```
+- Python 3.6 or higher
+- Windows operating system
 
-2. **Create and Activate Virtual Environment**
+### 2. Get the Code
 
-    ```bash
-    python -m venv .venv
-    .venv\Scripts\activate
-    ```
+```bash
+git clone https://github.com/yourusername/fishtime.git
+cd fishtime
+```
 
-3. **Install Dependencies**
+### 3. Install Dependencies
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+# Create and activate a virtual environment (optional)
+python -m venv .venv
+.venv\Scripts\activate
 
-4. **Run the Application**
+# Install required packages
+pip install -r requirements.txt
+```
 
-    ```bash
-    python main.py
-    ```
+### 4. Run the Application
 
-## Configuration
+```bash
+python app.py
+```
 
-The application's configuration file is 
+## 🚀 User Guide
 
-config.json
+1. **Launch the App**: After running the program, the application automatically starts recording the current active window
+2. **View Current Tracking**: The main interface displays the name and icon of the currently active application
+3. **Manage Whitelist**: Use the "Process Whitelist" feature to add or remove applications that shouldn't be monitored
+   - Manually enter application names to add to the whitelist
+   - Select from a list of previously tracked applications
+4. **View Reports**: Click "Generate Report" to view application usage statistics for the day
+5. **Export Data**: In the report interface, choose your preferred format (XLSX/CSV/PDF) to export data
+6. **Clear Records**: If needed, click "Clear Records" to delete historical data
+7. **Personalization Settings**:
+   - Change interface language (Chinese/English)
+   - Switch theme style (Dark/White/Gray)
+   - Customize font style and color
 
-, which includes the following settings:
+## ⚙️ Configuration
 
-- **font_family**: Font name (default: "Microsoft YaHei")
-- **font_color**: Font color (default: "#2E3440")
-- **language**: Interface language ("zh_CN" or "en_US")
-- **theme**: Theme style ("灰色", "白色", "暗黑")
-- **Process Whitelist**: List of processes to exclude from monitoring
-
-Example 
-
-config.json
-
-:
+Application settings are stored in the `config.json` file, which includes:
 
 ```json
 {
@@ -82,21 +89,27 @@ config.json
 }
 ```
 
-## Usage
+- **font_family**: Interface font
+- **font_color**: Font color
+- **language**: Language setting ("zh_CN" or "en_US")
+- **theme**: Interface theme ("暗黑" (Dark), "白色" (White), or "灰色" (Gray))
+- **Process Whitelist**: List of whitelisted processes
 
-- **Start the Application**: Run 
+## 📷 Screenshots
 
-main.py
+![Main Interface](https://placeholder.com/image1) 
+![Report Interface](https://placeholder.com/image2)
 
- to launch the application, which will automatically begin tracking the usage time of the active application.
-- **Generate Reports**: Click the "Generate Report" button to view the usage time distribution for the day.
-- **Manage Whitelist**: Add or remove applications from the process whitelist to exclude them from tracking.
-- **Export Data**: Choose to export data in CSV, XLSX, or PDF formats for further analysis or archiving.
-- **Settings**:
-    - **Font Settings**: Customize the application's font style and color.
-    - **Language Switching**: Select Chinese or English from the language options.
-    - **Theme Switching**: Choose your preferred theme style (dark, white, gray).
+## 📄 License
 
-## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 🤝 Contributing
+
+Suggestions and improvements to the project are welcome! For any issues or suggestions, please submit an issue or pull request.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Yijun Feng</p>
+</div>

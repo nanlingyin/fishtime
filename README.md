@@ -43,7 +43,7 @@
 ### 2. 获取代码
 
 ```bash
-git clone https://github.com/yourusername/fishtime.git
+git clone https://github.com/nanlingyin/fishtime.git
 cd fishtime
 ```
 

@@ -111,5 +111,5 @@ Suggestions and improvements to the project are welcome! For any issues or sugge
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Yijun Feng</p>
+  <p>Made with ❤️ by LynngNAN</p>
 </div>

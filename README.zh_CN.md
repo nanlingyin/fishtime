@@ -111,5 +111,5 @@ python app.py
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Yijun Feng</p>
+  <p>Made with ❤️ by LynngNAN</p>
 </div>

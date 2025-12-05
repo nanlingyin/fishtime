@@ -130,7 +130,10 @@ const generateReport = async () => {
   reportLoading.value = true
   aiCritique.value = ''
   try {
-    const res = await axios.post('/api/report/ai', { period: reportPeriod.value })
+    const res = await axios.post('/api/report/ai', { 
+      period: reportPeriod.value,
+      language: locale.value 
+    })
     if (res.data.error) {
       ElMessage.error(res.data.error)
       aiCritique.value = "Error: " + res.data.error

@@ -212,6 +212,7 @@ def update_ai_config(config: dict = Body(...)):
 
 class AIReportRequest(BaseModel):
     period: str = "today" # today or week
+    language: str = "zh" # zh or en
 
 @app.post("/api/report/ai")
 async def generate_ai_report(request: AIReportRequest):
@@ -238,6 +239,8 @@ async def generate_ai_report(request: AIReportRequest):
     usage_summary = "\n".join(filtered_data[:10]) # Top 10
     total_hours = total_duration / 3600
     
+    target_lang = "Chinese" if request.language == "zh" else "English"
+    
     prompt = f"""
     You are a strict, sharp-tongued, but constructive productivity coach.
     The user has spent {total_hours:.1f} hours on the computer {period_str}.
@@ -246,7 +249,9 @@ async def generate_ai_report(request: AIReportRequest):
     
     Please provide a "Sharp Critique" (锐评) of their time management. 
     Be slightly sarcastic if they spent too much time on entertainment, but encouraging if they worked hard.
-    Keep it under 150 words. Language: Chinese.
+    Keep it under 150 words.
+    
+    IMPORTANT: You MUST output the response in {target_lang} ONLY. Do not use any other language.
     """
     
     try:

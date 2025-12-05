@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+psutil
+pywin32
+pillow

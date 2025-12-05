@@ -1,5 +1,6 @@
 main.exe
-usage.db
+*.db
+*.db-journal
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -98,6 +99,28 @@ ipython_config.py
 #Pipfile.lock
 
 # poetry
+
+# Node.js / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VS Code
+.vscode/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.

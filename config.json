@@ -3,5 +3,13 @@
     "font_color": "#000000",
     "language": "zh_CN",
     "theme": "灰色",
-    "Process Whitelist": []
+    "Process Whitelist": [],
+    "App Limits": {
+        "QQ": 5
+    },
+    "AI Config": {
+        "api_key": "sk-jkjpfyjbughuffoqsrrheaeraefcxotzcvtrbrbksacnptgo",
+        "base_url": "https://api.siliconflow.cn/v1",
+        "model": "deepseek-ai/DeepSeek-V3.1-Terminus"
+    }
 }
